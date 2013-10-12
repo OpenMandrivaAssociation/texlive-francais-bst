@@ -1,11 +1,12 @@
-# revision 28003
+# revision 30446
 # category Package
 # catalog-ctan /biblio/bibtex/contrib/francais-bst
-# catalog-date 2012-10-16 13:40:31 +0200
+# catalog-date 2013-05-12 22:32:31 +0200
 # catalog-license lppl1.3
-# catalog-version undef
+# catalog-version 1.1
 Name:		texlive-francais-bst
-Version:	20121016
+Epoch:		1
+Version:	1.1
 Release:	1
 Summary:	Bibliographies conforming to French typographic standards
 Group:		Publishing

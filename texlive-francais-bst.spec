@@ -7,7 +7,7 @@
 Name:		texlive-francais-bst
 Epoch:		1
 Version:	1.1
-Release:	4
+Release:	5
 Summary:	Bibliographies conforming to French typographic standards
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/francais-bst

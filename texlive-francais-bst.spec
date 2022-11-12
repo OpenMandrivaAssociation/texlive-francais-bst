@@ -1,19 +1,13 @@
-# revision 30446
-# category Package
-# catalog-ctan /biblio/bibtex/contrib/francais-bst
-# catalog-date 2013-05-12 22:32:31 +0200
-# catalog-license lppl1.3
-# catalog-version 1.1
 Name:		texlive-francais-bst
 Epoch:		1
-Version:	1.1
-Release:	10
+Version:	38922
+Release:	1
 Summary:	Bibliographies conforming to French typographic standards
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/francais-bst
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/francais-bst.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/francais-bst.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/francais-bst.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/francais-bst.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -21,29 +15,27 @@ Requires(post):	texlive-kpathsea
 
 %description
 The package provides bibliographies (in French) conforming to
-the rules in "Guide de la communication ecrite" (Malo, M.,
+the rules in "Guide de la communication écrite" (Malo, M.,
 Quebec Amerique, 1996. ISBN 978-2-8903-7875-9) The BibTeX
 styles were generated using custom-bib and they are compatible
 with natbib.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/bibtex/bst/francais-bst/francais.bst
-%{_texmfdistdir}/bibtex/bst/francais-bst/francaissc.bst
-%doc %{_texmfdistdir}/doc/bibtex/francais-bst/README
-%doc %{_texmfdistdir}/doc/bibtex/francais-bst/francaisbst.tex
+%{_texmfdistdir}/bibtex/bst/francais-bst
+%doc %{_texmfdistdir}/doc/bibtex/francais-bst
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 

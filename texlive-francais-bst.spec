@@ -1,6 +1,6 @@
 Name:		texlive-francais-bst
 Epoch:		1
-Version:	69866
+Version:	76790
 Release:	1
 Summary:	Bibliographies conforming to French typographic standards
 Group:		Publishing
